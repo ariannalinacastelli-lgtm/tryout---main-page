@@ -1,0 +1,151 @@
+
+body {
+border-radius: 1.5em;
+font-family: "Inter", sans-serif;
+background: #ededed;
+background: linear-gradient(180deg, rgba(237, 237, 237, 1) 0%, rgba(133, 133, 133, 1) 100%, rgba(237, 221, 83, 1) 100%);}
+
+select {
+    font-weight: 100;
+    font-size: 1em;
+    background-color : #5050506a ;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 5em;
+    }
+
+h2 {
+    font-weight: 700;
+    font-size: 2em;
+    }
+
+h3 {
+    font-weight: 50;
+    font-size: 2em;
+    }
+
+h4 {
+    font-weight: 700;
+    font-size: 1.25em;
+    
+    }
+
+h5 {
+    
+    font-weight: 50;
+    font-size: .75em;
+    }
+
+
+
+
+.bigger-icon {
+    width: 5em;
+    height: 5em;
+    stroke-width: 3;
+    color: #000000;
+}
+
+.usual-icon {
+
+    width: 1em;
+    height: 1em;
+    stroke-width: 3;
+    color: #000000;
+
+}
+
+.special-icon {
+
+    width: 1em;
+    height: 1em;
+    stroke-width: 10;
+    color: #000000;
+
+}
+
+.is-centered {
+    display: flex;
+    justify-content: center;
+}
+
+.is-left {
+
+    display: flex;
+   margin-left: 2em;
+
+}
+
+.leftData {
+
+    display: flex;
+    flex-direction: column;
+     margin-left: 2em;
+}
+
+.white {
+
+  background-color: #ffffff;  
+  border-radius: 1.5em;
+}
+
+.darker {
+    border-radius: 1.5em;
+    background: #ababab;
+    background: linear-gradient(180deg, rgba(171, 171, 171, 0.51) 0%, rgba(46, 46, 46, 0.79) 100%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    padding-top: 0.15em;
+    flex-direction: column;
+
+    margin-top: 1.75em;
+}
+
+.padding {
+  padding-top: 0.15em;
+  padding-left: 1.25em;
+}
+
+.column {
+display: flex;
+flex-direction: row;
+
+}
+.row {
+
+display: flex;
+flex-direction: row;
+
+}
+
+
+/* =======------========-------=======-------======= */
+
+#informations-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em 2em;
+
+    padding: 0em 1em;
+}
+
+.card {
+    width: 30%;
+}
+
+.card h5 {
+    margin: 0;
+}
+
+.card .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card .row h4 {
+    margin: 0;
+}
