@@ -91,16 +91,17 @@ h5 {
   border-radius: 1.5em;
 }
 
-.darker {
+#darker {
     border-radius: 1.5em;
     background: #ababab;
     background: linear-gradient(180deg, rgba(171, 171, 171, 0.51) 0%, rgba(46, 46, 46, 0.79) 100%, rgba(0, 0, 0, 1) 100%);
     display: flex;
     padding-top: 0.15em;
-    flex-direction: column;
-
     margin-top: 1.75em;
+    justify-content: center;
 }
+
+
 
 .padding {
   padding-top: 0.15em;
@@ -109,8 +110,7 @@ h5 {
 
 .column {
 display: flex;
-flex-direction: row;
-
+flex-direction: column;
 }
 .row {
 
@@ -148,4 +148,28 @@ flex-direction: row;
 
 .card .row h4 {
     margin: 0;
+}
+
+.row h5 {
+
+margin: 0;
+
+}
+
+
+
+.padrow {
+
+display: flex;
+flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+
+#reccs {
+
+align-items: center;
+justify-content:space-around;
+
 }
