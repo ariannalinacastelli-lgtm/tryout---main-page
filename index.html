@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/methio/adafruitIO-class@latest/index.js"></script>
     <script src="script.js" defer></script>
+
 
 </head>
 <body>
@@ -20,7 +22,7 @@
     </div>
     <!--temperature-->
 
-    <div class="is-centered"><h1>20°</h1></div>
+    <div class="is-centered"><h1><span id="temperature">20</span>°</h1></div>
 
     <!-- means third block on the page -->
     <div  class="leftData">
@@ -55,7 +57,7 @@
               <h5>Humidity</h5>
                 <div class="row">
                   <i data-lucide="droplet" class="usual-icon"></i>
-                  <h4>75%</h4>
+                  <h4><span id="humidity">75</span>%</h4>
                 </div>
             </div>
 
@@ -63,7 +65,7 @@
               <h5>Wind</h5>
               <div class="row">
                 <i data-lucide="wind" class="usual-icon"></i>
-                <h4>9 km/h</h4>
+                <h4><span id="wind">9 </span>km/h</h4>
               </div>
             </div>
 
