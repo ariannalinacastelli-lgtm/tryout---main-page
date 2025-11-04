@@ -15,11 +15,11 @@ The code for the CWIOT part of the course can be found in the file CWIOT of the 
 ![Schematics_for_assignment](Images/Schematics%20for%20assignment.jpg)
 
 #### Photographs
-Youtube video of the prototype working, -> sending thee data of temperature and humidity to the website
+Youtube video of the prototype working -> sending thee data of temperature and humidity to the website
 
 <a href="https://youtu.be/nrf77iU3lK4" 
 target="_blank"><img src="https://youtu.be/nrf77iU3lK4" 
-alt="youtube demo video" width="400" height="300" border="10" /></a>
+alt="youtube video" width="400" height="300" border="10" /></a>
 
 
 ### DWW
@@ -31,7 +31,7 @@ alt="youtube demo video" width="400" height="300" border="10" /></a>
 #### User flow 
 [See the user flow in figma↗](https://www.figma.com/design/qGIfacWc1uM8ETX943kxrF/Arianna---Assignment-UI?node-id=0-1&t=gmkJWHoLXzOK87q3-1)
 
-The images can still be found in the folder images of the repo 
+The images can still be found in the folder images of the repo, the following show the user flow of V1 of the website 
 
 ![Assignment V1 interfaces](Images/Assignment%20V%201%20-%203/Assignment%20V1/Assignment%20V1%20interfaces.png)
 
