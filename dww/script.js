@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 //create our own adafruitIO object
 
+
 const IO = new AdafruitIO("arianna2345", "aio_mJBb67cOSQraXlyp8aNEwPs8JWH9");
 
 //CODE TO RUN WHEN THE HTML PAGE IS LOADed
@@ -11,9 +12,9 @@ const IO = new AdafruitIO("arianna2345", "aio_mJBb67cOSQraXlyp8aNEwPs8JWH9");
 
 // DONT KNOW
 
-// I need to make this for tmeperature, humidity, wind -> i think if possible
+// DONE I need to make this for tmeperature, humidity, wind -> i think if possible
 // i need to create if statements for the reccomandation part, 
-// as well as for the precipitations and perceived temperature
+// i need the random thing as well as for the precipitations and perceived temperature
 
 
     /* */
@@ -41,37 +42,40 @@ const temperature = document.getElementById("temperature");
     const humidity = document.getElementById("humidity");
  humidity.innerHTML = data.json[0].value;
 
-    
-
         }); // end of getData() callback
-
-        
-
-        }); // end of getData() callback
-
-        // we try to put the wind value randomized
-        const wind = document.getElementById("wind");
- 
+    }); // end of getData() callback
        
     }, delayBetweenRequest); // end of setInterval callback 
 
 
-    /*setInterval function(){
+    setInterval(function(){
   
 
-    let currentWind = Math.floor(Math.random()*20);
+    let newWind = Math.floor(Math.random()*60);
         
-       console.log(currentWind);
+       console.log(newWind);
+
+           IO.sendData("wind", newWind, function(response) {
+        console.log("Sent to Adafruit:", response);
 
         IO.getData("wind", function(data) {
-        console.log(data.feed, data.json [0].value);
-        
-        //we create a link to the span
-        const wind = document.getElementById("wind")
-        wind.innerHTML = data.json [0].value;
-        });
-*/
-        });
+            console.log(data.feed, data.json [0].value);
+            
+            const wind = document.getElementById("wind")
+         
+            wind.innerHTML = data.json [0].value;
+           
+              
+        }); 
+
+    });
+
+}, 2000); 
+
+
+ 
+
+});
 
 
 
