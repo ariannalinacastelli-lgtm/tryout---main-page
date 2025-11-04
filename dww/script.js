@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
 //create our own adafruitIO object
 
 
-const IO = new AdafruitIO("arianna2345", "aio_mJBb67cOSQraXlyp8aNEwPs8JWH9");
+const IO = new AdafruitIO("IO_USERNAME", "IO_KEY");
 
 //CODE TO RUN WHEN THE HTML PAGE IS LOADed
 
