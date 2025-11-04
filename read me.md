@@ -2,59 +2,43 @@
 
 Final submission for the Designing with Web (DWW) and Connected Worlds & IoT (CWIOT) courses.
 
-
-### CWIOT
-
-1.The code for 
-
-Example folder structure:
-```arduino
-cwiot
-├── projet-v1
-│   ├── projet-v1.ino
-│   └── config.h
-│
-└── projet-v2
-    ├── projet-v2.ino
-    └── config.h
-```
-
-Create a subfolder for each project iteration.
-
-2.A schematic view of your project’s circuit.
-
-3.A video or a set of photos showing your project in operation.
-
-### For DWW
-
-1.An image of your moodboard.
-
-2.An image and/or a link to your Figma user flow.
-
-3.The complete code for your project, organized within a dedicated folder named dww.
-
 ## My submission 
 
 ### CWIOT
 
-#### Schematic view 
+The code for the CWIOT part of the course can be found in the file CWIOT of the repo, it includes the config.h and in arduino.ino
 
-![schematic view](images/schematic-view.png)
+![config.h](cwiot/config.h)
+![arduino.ino](cwiot/arduino.ino)
+
+#### Schematic view 
+![Schematics_for_assignment](Images/Schematics%20for%20assignment.jpg)
 
 #### Photographs
-Youtube video of the prototype lerping between colors
+Youtube video of the prototype working, -> sending thee data of temperature and humidity to the website
 
 <a href="https://youtu.be/nrf77iU3lK4" 
 target="_blank"><img src="http://img.youtube.com/vi/Rb1v3GvMv4M/0.jpg" 
 alt="youtube demo video" width="400" height="300" border="10" /></a>
 
+
 ### DWW
 
 #### Moodboard
 
-![figma moodboard](images/moodboard.png)
+![moodboard](images/moodboard.jpg)
 
 #### User flow 
-[See the user flow in figma↗](https://www.figma.com/design/vJZb0jIlyBSZZtqP1hdXyH/Assignment-designing-with-web-demo?node-id=0-1&t=i6oES4CvV3SZhfUw-1)
+[See the user flow in figma↗](https://www.figma.com/design/qGIfacWc1uM8ETX943kxrF/Arianna---Assignment-UI?node-id=0-1&t=gmkJWHoLXzOK87q3-1)
 
-![figma user flow](images/fuser-flow.png)
+The images can still be found in the folder images of the repo 
+
+![Assignment V1 interfaces](Images/Assignment%20V%201%20-%203/Assignment%20V1/Assignment%20V1%20interfaces.png)
+
+![Assignment V1 script](Images/Assignment%20V%201%20-%203/Assignment%20V1/Assignment%20V1%20script.png)
+
+![Assignment V1 widgets and buttons](Images/Assignment%20V%201%20-%203/Assignment%20V1/Assignment%20V1%20widgets%20and%20buttons.png)
+
+
+#### Code is in the dww folder
+
