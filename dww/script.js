@@ -4,17 +4,13 @@ document.addEventListener("DOMContentLoaded", function(){
 //create our own adafruitIO object
 
 
-const IO = new AdafruitIO("arianna2345", "secret");
+const IO = new AdafruitIO("arianna2345", "aio_mJBb67cOSQraXlyp8aNEwPs8JWH9");
 
 //CODE TO RUN WHEN THE HTML PAGE IS LOADed
 
 
 
-// DONT KNOW
-
-// DONE I need to make this for tmeperature, humidity, wind -> i think if possible
-// i need to create if statements for the reccomandation part, 
-// i need the random thing as well as for the precipitations and perceived temperature
+// to connect the page to get data from ADa fruit IO
 
 
     /* */
@@ -48,40 +44,52 @@ const temperature = document.getElementById("temperature");
     }, delayBetweenRequest); // end of setInterval callback 
 
 
+    // randomization formulas for indicators that cannot be predicted through the IOT device
+
     setInterval(function(){
   
 
-    let newWind = Math.floor(Math.random()*60);
-        
-       console.log(newWind);
+        let newWind = Math.floor(Math.random()*60);
+        console.log(newWind);
 
-           IO.sendData("wind", newWind, function(response) {
-        console.log("Sent to Adafruit:", response);
-
-        IO.getData("wind", function(data) {
-            console.log(data.feed, data.json [0].value);
             
-            const wind = document.getElementById("wind")
-         
-            wind.innerHTML = data.json [0].value;
-           
-              
-        }); 
+        const wind = document.getElementById("wind")
+    
+        wind.innerHTML = newWind;
 
-    });
+    }, 10000); 
 
-}, 2000); 
+ setInterval(function(){
+  
 
+        let newProbability = Math.floor(Math.random()*100);
+        console.log(newProbability);
 
- 
+            
+        const Precs = document.getElementById("Precs")
+    
+        Precs.innerHTML = newProbability;
+
+    }, 10000); 
+
+  setInterval(function(){
+  
+
+        let newFeels = Math.floor(Math.random()*30);
+        console.log(newFeels);
+
+            
+        const feels = document.getElementById("feels")
+    
+        feels.innerHTML = newFeels;
+
+    }, 10000); 
 
 });
 
 
 
 
-
-//if(humidity<50)
 
 
 
